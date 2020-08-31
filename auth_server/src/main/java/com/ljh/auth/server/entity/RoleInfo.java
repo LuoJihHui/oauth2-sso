@@ -26,7 +26,7 @@ public class RoleInfo implements Serializable {
         return "RoleInfo{" +
                 "id=" + id +
                 ", roleName='" + roleName + '\'' +
-                ", roleCode='" + roleCode + '\'' +
+                ", roleCodes='" + roleCode + '\'' +
                 '}';
     }
 
