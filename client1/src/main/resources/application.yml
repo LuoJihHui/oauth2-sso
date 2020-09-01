@@ -1,0 +1,16 @@
+server:
+  port: 1112
+  servlet:
+    session:
+      cookie:
+        name: s1
+
+security:
+  oauth2:
+    client:
+      client-id: javaBoy  # 客户端id
+      client-secret: 123  # 客户端秘钥
+      user-authorization-uri: http://localhost:1111/oauth/authorize # 用户授权端点(即到哪里获取授权)
+      access-token-uri: http://localhost:1111/oauth/token # 获取令牌端点
+    resource:
+      user-info-uri: http://localhost:1111/user # 获取用户信息接口地址(资源服务器地址)

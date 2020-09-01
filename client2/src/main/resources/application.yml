@@ -1,0 +1,16 @@
+server:
+  port: 1113
+  servlet:
+    session:
+      cookie:
+        name: s2
+
+security:
+  oauth2:
+    client:
+      client-id: javaBoy
+      client-secret: 123
+      user-authorization-uri: http://localhost:1111/oauth/authorize
+      access-token-uri: http://localhost:1111/oauth/token
+    resource:
+      user-info-uri: http://localhost:1111/user
